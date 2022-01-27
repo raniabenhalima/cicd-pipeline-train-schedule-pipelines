@@ -4,8 +4,8 @@ pipline {
     stage ('build') {
     steps {
       echo "Running build automation"
-      sh "./gradlew build --no deamon"
-      archiveartifacts artifacts "dist/test.zip"  
+      sh "./gradlew build --no-deamon"
+      archiveArtifacts artifacts "dist/test.zip"  
           }
     }
   }
